@@ -36,11 +36,11 @@ Dockerfile использует многоэтапную сборку и зап�
 
 Команды выполняются из корня technomaster-deploy. Требуются Docker Desktop, mkcert, заполненный `.env.local` и локальное доверие сертификату.
 
-Репозитории располагаются рядом. Папка приложения называется `webka`, папка этой работы — `technomaster-deploy`. Для воспроизведения используется проверенная версия приложения после исправлений кабинетов, заказов и SEO, коммит `e06e7f0d3ca9b5fd28ab08f629940d48b00b3dc7`.
+Репозитории располагаются рядом. Папка приложения называется `webka`, папка этой работы — `technomaster-deploy`. Для воспроизведения используется проверенная версия приложения после исправлений кабинетов, заказов и SEO, коммит `1b75e727390a97c824962a12aef26fba2e5cf0cb`.
 
 ```powershell
 git clone https://github.com/your0kk/technomaster.git webka
-git -C webka checkout e06e7f0d3ca9b5fd28ab08f629940d48b00b3dc7
+git -C webka checkout 1b75e727390a97c824962a12aef26fba2e5cf0cb
 git clone https://github.com/your0kk/technomaster-deploy.git
 cd technomaster-deploy
 New-Item -ItemType Directory -Force deploy/certs
@@ -113,7 +113,7 @@ Workflow этого репозитория запускается при push, p
 ## Ссылки
 
 - [Исходный проект](https://github.com/your0kk/technomaster)
-- [Версия приложения для этой работы](https://github.com/your0kk/technomaster/tree/e06e7f0d3ca9b5fd28ab08f629940d48b00b3dc7)
+- [Версия приложения для этой работы](https://github.com/your0kk/technomaster/tree/1b75e727390a97c824962a12aef26fba2e5cf0cb)
 - [Успешный запуск Actions](https://github.com/your0kk/technomaster-deploy/actions/runs/44280602534)
 - [Docker Compose](https://docs.docker.com/compose/)
 - [mkcert](https://github.com/FiloSottile/mkcert)

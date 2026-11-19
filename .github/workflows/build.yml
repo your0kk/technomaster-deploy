@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: your0kk/technomaster
-          ref: e06e7f0d3ca9b5fd28ab08f629940d48b00b3dc7
+          ref: 1b75e727390a97c824962a12aef26fba2e5cf0cb
           path: webka
       - name: Проверка Compose
         working-directory: technomaster-deploy
