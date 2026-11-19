@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: your0kk/technomaster
-          ref: 2678d2b620bdaad44f58221dab9e5b4be35b6d73
+          ref: e06e7f0d3ca9b5fd28ab08f629940d48b00b3dc7
           path: webka
       - name: Проверка Compose
         working-directory: technomaster-deploy
@@ -40,3 +40,4 @@ jobs:
           docker network create deploy-check
           docker run -d --name app --network deploy-check technomaster:ci
           docker run --rm --network deploy-check -v "$PWD/deploy/nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro" -v "$PWD/deploy/certs:/etc/nginx/certs:ro" nginx:1.30-alpine nginx -t
+
